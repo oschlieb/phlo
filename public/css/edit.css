@@ -1,0 +1,154 @@
+/*---------------------------------------------------------------------------
+Sort list
+---------------------------------------------------------------------------*/
+.sort {
+  margin: 0;
+  padding: 0;
+}
+.sort li {	
+  list-style: none;
+  background-color: #eee; 
+  padding: 20px 20px;
+  margin: 0 0 10px 0;
+}
+.sort label {
+  font-size: 80%;
+  color: #ddd;
+}
+
+/*---------------------------------------------------------------------------
+Title
+---------------------------------------------------------------------------*/
+.parent-title input[type='text'] {	
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  width: 465px;
+  height: 30px;
+  color: #E84319;	
+  background-color: #eee;
+  border: none;
+  padding-left: 0px;
+  margin: 0 20px 0 0;
+}
+.parent-title input[type='text']:focus {
+  color: #444;
+  background-color: #fff;
+}
+
+/*---------------------------------------------------------------------------
+Subtitle
+---------------------------------------------------------------------------*/
+.subtitle-container {
+  margin: 0;
+  padding: 0;
+}
+.subtitle-container img { 
+  float: right;
+  margin-top: -5px;
+  vertical-align: middle;
+}
+.subtitle input[type='text'] {
+  font-size: 1.2em!important;
+  padding-left: 0px!important;
+  width: 400px!important;
+  color: #fff!important;
+  border: none!important;
+  font-family: Helvetica, sans-serif;
+  background-color: #596A7B;
+}
+.subtitle input[type='text']:focus {
+  color: #444!important;
+  background-color: #fff;
+}
+.priority { 
+  width: 20px!important; 
+}
+
+/*---------------------------------------------------------------------------
+Hidden content
+---------------------------------------------------------------------------*/
+.hidden-content { 
+  width: 100%;
+}
+.hidden-content .border { 
+  margin-top: 15px;
+  border-top: 1px dashed #ccc; 
+}
+.hidden-content input[type='text'] {
+  background-color: #fff;
+  width: 180px;
+}
+
+/*---------------------------------------------------------------------------
+Specific form fields
+---------------------------------------------------------------------------*/
+.response { width: 100%; }
+
+/*---------------------------------------------------------------------------
+Tables
+---------------------------------------------------------------------------*/
+.container {
+	padding-top: 10px;
+	display: table;
+}
+.row {
+	display: table-row;
+}
+.column {
+	display: table-cell;
+}
+.column-3 {
+	display: table-cell;
+	width: 580px;
+}
+.column.mr { 
+	padding-right: 20px; 
+}
+
+/*---------------------------------------------------------------------------
+Items
+---------------------------------------------------------------------------*/
+.phloitem { margin-top: 20px; }
+.phloitem li {
+	background-color: #596A7B;
+	color: #fff;
+}
+
+/*---------------------------------------------------------------------------
+Buttons
+---------------------------------------------------------------------------*/
+.parent-title img {
+	vertical-align: text-bottom;
+	margin: 2px 0 -4px 0;
+}
+.subtitle-container img {
+	vertical-align: text-bottom;
+	margin: 2px 0 -4px 4px;
+	
+}
+.move { 
+	cursor: move; 
+}
+.add, .remove, .answer {
+	cursor: pointer;
+}
+.man {
+	cursor: pointer;
+	display: none;
+	margin: -4px 0 0 0;
+	color: #E84319;
+	vertical-align: middle; 
+}
+.sort li.collapsed > ol { 
+	display: none; 
+}
+.sort li.branch > div > .man { 
+	display: inline-block; 
+}
+.sort li.collapsed > div > .man > span:before { 
+	content:url('http://werkphlo.com/img/open.png'); 
+}
+.sort li.expanded > div > .man > span:before { 
+	content:url('http://werkphlo.com/img/close2.png'); 
+}

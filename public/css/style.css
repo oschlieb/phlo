@@ -1,0 +1,435 @@
+/*----------------------------------------------------------------
+Reset
+-----------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+input[type='submit'] {
+}
+footer, header, menu, nav, section { 
+  display: block; 
+}
+ol, ul { 
+  list-style: none; 
+}
+blockquote, q { 
+  quotes: none; 
+}
+blockquote:before, blockquote:after, q:before, q:after { 
+  content: ''; content: none; 
+}
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0;  
+}
+
+/*---------------------------------------------------------------------------
+General
+---------------------------------------------------------------------------*/
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #777;
+  line-height: 1.6em;
+}
+p { margin: 0 0 10px 0; }
+.right { float: right; }
+.left { float: left; }
+.pad-top { margin-top: 10px; }
+.pad-bottom { margin-bottom: 10px!important; }
+small { font-size: 80%; line-height: 1.2em; }
+
+/*---------------------------------------------------------------------------
+Titles
+---------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 { margin: 0 0 20px 0px; font-weight: bold; }
+h1 { font-size: 1.6em; color: #596A7B; }
+h2 { font-size: 1.4em; }
+
+/*---------------------------------------------------------------------------
+Links
+---------------------------------------------------------------------------*/
+a { 
+  color: #E84319; 
+  text-decoration: none; 
+}
+a:hover, a:focus { 
+  text-decoration: underline; 
+}
+
+/*---------------------------------------------------------------------------
+Buttons
+---------------------------------------------------------------------------*/
+.btn {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  background-color: #E84319;
+  border: none;
+  cursor: pointer;
+}
+.btn.delete,
+.btn.submit {
+  padding: 10px 15px;
+}
+.btn.anchor {
+  padding: 7px 15px;
+  display: inline-block;
+}
+
+/*---------------------------------------------------------------------------
+Page Set-up
+---------------------------------------------------------------------------*/
+#ctnt-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+/*---------------------------------------------------------------------------
+Header
+---------------------------------------------------------------------------*/
+#header {
+  width: 100%;
+  padding: 0;
+}
+
+/*---------------------------------------------------------------------------
+Title
+---------------------------------------------------------------------------*/
+#title {
+  width: 100%;
+}
+.title-wrap {  
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+}
+.title { 
+  font-size: 2.2em; 
+  font-weight: bold; 
+  line-height: 2em;
+  width: 300px;
+  margin: 0px;
+  float: left;
+}
+.title a {
+  text-decoration: none;
+  color: #777;
+} 
+.account {
+  margin: 20px 0;
+  float: right;
+}
+
+/*---------------------------------------------------------------------------
+Nav
+---------------------------------------------------------------------------*/
+#nav {
+  width: 100%;
+  padding: 15px 0;
+  background: #596A7B; /*#009cb2*/
+}
+.nav-wrap {  
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+  color: #fff;
+}
+.nav-wrap ul > li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  position: relative;
+}
+.nav-wrap ul > li a {
+  display: block;
+  padding: 0 20px;
+  color: #555;
+  text-transform: uppercase;
+}
+#menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 80%;
+  color: #fff;
+}
+#menu a:link, #menu a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+#menu a:hover, #menu a:focus {
+  text-decoration: underline;
+}
+
+/*---------------------------------------------------------------------------
+Breadcrumbs
+---------------------------------------------------------------------------*/
+#crumbs {
+  width: 100%;
+  padding: 8px 0;
+  background: #eee;
+}
+.crumbs-wrap {  
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+  color: #999;
+  font-size: 80%;
+}
+
+/*---------------------------------------------------------------------------
+Footer
+---------------------------------------------------------------------------*/
+#footer {
+  width: 100%;
+  padding: 20px 0;
+  background: #999;
+  border-top: 4px solid #eee;
+}
+.footer-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  color: #fff;
+}
+
+/*---------------------------------------------------------------------------
+Body
+---------------------------------------------------------------------------*/
+#main {
+  width: 100%;
+  padding: 40px 0;
+}
+.main-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+/*---------------------------------------------------------------------------
+Columns
+---------------------------------------------------------------------------*/
+#col-full {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#col-left {
+  float: left;
+  width: 680px;
+}
+#col-right {
+  float: right;
+  width: 300px;
+}
+#col-2 {
+  float: left;
+  width: 495px;
+}
+#col-3 {
+  float: left;
+  width: 326.66px;
+}
+#col-2.pad, #col-3.pad {
+  margin-right: 10px;
+}
+
+/*---------------------------------------------------------------------------
+Clear boxes
+---------------------------------------------------------------------------*/
+.clear-box {
+  margin: 0 0 10px 0px;
+  color: #bbb;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+.clear-box .manage-table {
+	padding-left: 20px;
+}
+
+/*---------------------------------------------------------------------------
+Grey boxes
+---------------------------------------------------------------------------*/
+.grey-box {
+  background-color: #eee;
+  padding: 20px 20px;
+  margin: 0 0 10px 0; 
+}
+.grey-box-title {
+  background-color: #eee;
+  border-bottom: 1px solid #f6f6f6;
+  padding: 20px 20px 0 20px;
+  margin: 0px; 
+}
+.grey-box h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/*---------------------------------------------------------------------------
+Blue boxes
+---------------------------------------------------------------------------*/
+.blue-box {
+  background-color: #C0E6EC;
+  padding: 20px 20px;
+  margin: 0 0 10px 0; 
+}
+.blue-box-title {
+  background-color: #C0E6EC;
+  border-bottom: 1px solid #f6f6f6;
+  padding: 20px 20px 0 20px;
+  margin: 0px; 
+}
+.blue-box-title h2 {
+  margin-bottom: 15px;
+}
+.help {
+  float: right;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 70%!important;
+}
+
+/*---------------------------------------------------------------------------
+Tables
+---------------------------------------------------------------------------*/
+.manage-table {
+  display: table;
+}
+.manage-table .row {
+  display: table-row;
+}
+.manage-table .col {
+  width: 110px;
+  display: table-cell;
+}
+.manage-table .col.pad-right {
+  padding-right: 20px;
+}
+.manage-table .col-3 {
+  display: table-cell;
+  width: 580px;
+}
+
+/*---------------------------------------------------------------------------
+Account specific
+---------------------------------------------------------------------------*/
+.order-phlos {
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*---------------------------------------------------------------------------
+Form elements
+---------------------------------------------------------------------------*/
+.block { 
+	display: block;
+}
+select {
+  -moz-border-radius: 0px!important;
+  -webkit-border-radius: 0px!important;
+  border-radius: 0px!important;
+  border: 1px solid #999;
+  background-color: #eee;
+  color: #666;
+  font-size: 13px;
+  height: 28px;
+  padding: 4px 4px 4px 7px;
+}
+input[type='text'], 
+input[type='text']:focus, 
+input[type='email'], 
+input[type='email']:focus, 
+input[type='password'], 
+input[type='password']:focus, 
+textarea, 
+textarea:focus {
+  width: 245px;
+  color: #666;
+  border: 1px solid #999;
+  font-size: 14px;
+  padding: 5px 5px 5px 8px;
+  margin: 0;
+}
+
+/*----------------------------------------------------------------
+Clear fix
+-----------------------------------------------------------------*/
+.clear-fix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear-fix {
+  zoom: 1;
+}
+
+/*----------------------------------------------------------------
+Notifications
+-----------------------------------------------------------------*/
+#notifications { 
+  width: 100%; 
+}
+#notifications div {
+  color: #fff;
+  padding: 10px 15px 10px 20px;
+  margin: 0 0 20px 0;
+  border: none;  
+}
+.success {
+  background-color: #AFCABC;
+}
+.error {
+  background-color: #E84319;
+}
+.warning {
+  color: #A37A00!important;
+  background-color: #FFFFC2;
+}
+.note-close {
+  cursor: pointer;
+  border: 2px solid #fff;
+  padding: 1px 5px 2px 5px;
+  line-height: 1em;
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+}
+
+/*---------------------------------------------------------------------------
+Loading spinner
+---------------------------------------------------------------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba( 99, 99, 99, .8 ) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+}
+body.loading {
+  overflow: hidden;   
+}
+body.loading .modal {
+  display: block;
+}
